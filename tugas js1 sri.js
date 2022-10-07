@@ -1,6 +1,10 @@
 //task 1
 let nama = "Sri YUniar";
-let adress = "Ambon, Maluku";
+let adress = {
+    kecamatan : "Sirimau",
+    kota : "Ambon",
+    provinsi : "Maluku"
+} 
 let email = "sriyuniar541@gmail.com";
 let isMerried =  "false";
 let hobbies = ["nonton","jalan-jalan","membaca"];
