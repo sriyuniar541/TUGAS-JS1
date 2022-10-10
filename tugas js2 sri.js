@@ -82,7 +82,14 @@ console.log(searchName(name1, "le"));
 //task3
 let seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     if (nilaiAwal < nilaiAkhir && dataArray.length > 5){
-        console.log(dataArray.filter((dataArray) => dataArray !== nilaiAkhir && nilaiAwal));
+        let result = [];
+        for (let i = 0; i<dataArray.length; i++){
+            let j = dataArray[i];
+            if (nilaiAwal< j && j < nilaiAkhir){
+                result.push(j);
+            }
+        } console.log(result);
+
     } else if (dataArray.length <= 5  && nilaiAwal > nilaiAkhir){
         console.log("nilai awal harus kurang dari nilai akhir dan dataArray harus lebih dari 5");
     } else if (nilaiAwal > nilaiAkhir){
@@ -94,9 +101,13 @@ let seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     }
 }
 
-seleksiNilai(2,4,[1,2,3,7,5,6]);
+seleksiNilai(2,9,[1,2,3,7,5,6]);
 seleksiNilai(7,4,[ 1,2,3,4,5]);
 seleksiNilai(7,4,[1,2,3,4,5,6]);
 seleksiNilai(2,4,[1,2,3,4,5]);
+
+
+
+
 
 
