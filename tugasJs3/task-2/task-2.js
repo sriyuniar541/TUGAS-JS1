@@ -11,7 +11,12 @@ const getMonth = (callback) => {
     }, 4000);
 }
 
+const tampilkanMonth = ( err, month) => {
+    if (err) {
+        console.log(err.message)
+    }
+    let  hasil = month.map(res => res)
+    console.log(hasil)
+}
 
-getMonth(function callback (month){
-    return console.log(`ini adalah bulan ${month} `)
-});
+getMonth(tampilkanMonth);

@@ -14,26 +14,26 @@ const cekHariKerja = (day) => {
     })
 } 
 
-let day = 'rabu'
+let day = 'senin'
 
 
 //=====then dan catch=====
-let result = cekHariKerja(day)
-result.then(res => console.log(`berhasil hari ini adalah kerja (${res})`))
-.catch(res => console.log(res));
+// let result = cekHariKerja(day)
+// result.then(res => console.log(`berhasil hari ini adalah kerja (${res})`))
+// .catch(res => console.log(res));
 
 
 //=====try dan catch=====
-// async function hasilAsync () {
-//     try {
-//         let result = await cekHariKerja(day);
-//         console.log ( `berhasil hari ini adalah kerja (${result} )`);
-//     } catch(err) {
-//         console.log(err)
-//     }
-// }
+async function hasilAsync () {
+    try {
+        let result = await cekHariKerja(day);
+        console.log ( `berhasil hari ini adalah kerja (${result} )`);
+    } catch(err) {
+        console.log(err)
+    }
+}
 
-// hasilAsync();
+hasilAsync();
 
 
 
