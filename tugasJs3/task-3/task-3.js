@@ -44,7 +44,7 @@ let kopi = true
 
 buatKopi(kopi)
 .then((res) => console.log(res)).
-catch((err) => console.log(err))
+catch((err) => console.log(err.message))
 
 //tes
 console.log('tes')
